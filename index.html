@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="side-panel">
+      <h1>Oasis</h1>
+      <p>Secure authentication demo</p>
+      <div class="toggle-text">
+        <span id="toggle-message">New here?</span>
+        <button id="toggle-btn" onclick="showRegister()">Create account</button>
+      </div>
+    </div>
+
+    <div class="form-panel">
+      <form id="login-form" class="form active">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-pass" placeholder="Password">
+        <button type="button" onclick="loginUser()">Login</button>
+        <p class="switch">Don't have an account? <a onclick="showRegister()">Sign up</a></p>
+      </form>
+      <form id="register-form" class="form">
+        <h2>Register</h2>
+        <input type="email" id="reg-email" placeholder="Email">
+        <input type="password" id="reg-pass" placeholder="Password">
+        <button type="button" onclick="registerUser()">Sign Up</button>
+        <p class="switch">Already have an account? <a onclick="showLogin()">Login</a></p>
+      </form>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
